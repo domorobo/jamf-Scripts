@@ -1,9 +1,9 @@
 #jamf api call to restart Envoy iPads by Darrell Wallace
 
-url="https://vai.jamfcloud.com"
-client_id="60a91eb0-a34d-46bc-95de-27d0d7594cd6"
-client_secret="ICxEHJ41w-wLPYbFmdJzvvddkFnErXzZHq8jEnI0JxYekUPWc3J3QaMmQFi-Ylm1"
-id_list=25,26,27,28,29,30
+url="<your JSS url>"
+client_id="<jamf API client ID>"
+client_secret="<jamf API client Sectret"
+id_list=<list od mobile device ID numbers, seperated by comma>
 
 getAccessToken() {
 	response=$(curl --location --request POST "${url}/api/oauth/token" \
